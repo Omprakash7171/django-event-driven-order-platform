@@ -1,0 +1,19 @@
+replicas: 1
+
+image:
+  repository: "hugobrilhante/stock"
+  pullPolicy: Always
+  tag: "v1"
+
+name: "stock"
+
+port: 8001
+
+secret_key: "secret_key"
+
+postgres:
+  db: "db"
+  user: "user"
+  password: "password"
+
+database_url: "postgres://user:password@stock-db-service:5432/db"

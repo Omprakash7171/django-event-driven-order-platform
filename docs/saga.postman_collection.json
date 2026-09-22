@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "0f0e716c-73ab-4500-a460-184ee51867e6",
+		"name": "Saga with Outbox Pattern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46551"
+	},
+	"item": [
+		{
+			"name": "order/api/v1/orders/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\": 1,\n    \"product_id\" : 1,\n    \"amount\": 1,\n    \"quantity\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/order/api/v1/orders/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/api/v1/orders/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/order/api/v1/orders/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stock/api/v1/stocks/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/stock/api/v1/stocks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"stock",
+						"api",
+						"v1",
+						"stocks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stock/api/v1/reservations/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/stock/api/v1/reservations/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"stock",
+						"api",
+						"v1",
+						"reservations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment/api/v1/payments/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/payment/api/v1/payments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"payment",
+						"api",
+						"v1",
+						"payments",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
